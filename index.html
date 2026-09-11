@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kshitij Raj — Java Full Stack Developer</title>
+
+<meta name="description" content="Kshitij Raj — Java Full Stack Developer specialising in Spring Boot, REST APIs, React and MySQL. B.Tech IT graduate building secure, production-grade web applications." />
+<meta name="author" content="Kshitij Raj" />
+<meta name="keywords" content="Kshitij Raj, Java Developer, Full Stack Developer, Spring Boot, React, REST API, MySQL, PostgreSQL, Docker, Backend Developer, Fresher" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://kshitijraj0722.github.io/Kshitij-Portfolio/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Kshitij Raj — Java Full Stack Developer" />
+<meta property="og:description" content="Spring Boot · React · MySQL · Docker. Building secure, scalable full-stack web applications." />
+<meta property="og:image" content="https://kshitijraj0722.github.io/Kshitij-Portfolio/assets/img/profile.webp" />
+<meta property="og:url" content="https://kshitijraj0722.github.io/Kshitij-Portfolio/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='system-ui'>&#9749;</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kshitij Raj",
+  "jobTitle": "Java Full Stack Developer",
+  "email": "mailto:Kshitijraj22@gmail.com",
+  "telephone": "+91-7519914746",
+  "url": "https://kshitijraj0722.github.io/Kshitij-Portfolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/kshitij-raj0722",
+    "https://github.com/KshitijRaj0722"
+  ],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "College of Engineering Roorkee" },
+  "knowsAbout": ["Java", "Spring Boot", "Spring Security", "REST APIs", "React", "MySQL", "PostgreSQL", "Docker"]
+}
+</script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#home" class="brand">
+      <span class="brand__mark">KR</span>
+      <span class="brand__text">Kshitij<span class="accent">.</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--sm btn--primary nav__cta" href="assets/resume/Kshitij_Raj_Resume.pdf" download>Resume</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme">
+        <svg class="ico-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress" id="scrollProgress"></div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <div class="wrap hero__inner">
+    <div class="hero__copy reveal">
+      <p class="hero__eyebrow"><span class="dot"></span> Open to Full-Time Roles · India / Remote</p>
+      <h1 class="hero__title">
+        Hi, I'm <span class="grad">Kshitij Raj</span>
+      </h1>
+      <p class="hero__role">
+        <span id="typed" class="typed"></span><span class="caret" aria-hidden="true">|</span>
+      </p>
+      <p class="hero__desc">
+        I build secure, production-grade web applications end to end — architecting
+        <strong>Spring Boot REST APIs</strong>, modelling relational databases, and shipping
+        responsive <strong>React</strong> frontends. B.Tech IT graduate with a builder's mindset
+        and a bias for clean, maintainable code.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">
+          View My Work
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="assets/resume/Kshitij_Raj_Resume.pdf" download class="btn btn--ghost">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 21h16"/></svg>
+          Download Résumé
+        </a>
+      </div>
+
+      <ul class="hero__socials">
+        <li><a href="https://www.linkedin.com/in/kshitij-raj0722" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21H9z"/></svg></a></li>
+        <li><a href="https://github.com/KshitijRaj0722" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a></li>
+        <li><a href="mailto:Kshitijraj22@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a></li>
+        <li><a href="tel:+917519914746" aria-label="Phone">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual reveal" data-delay="120">
+      <div class="photo">
+        <div class="photo__ring" aria-hidden="true"></div>
+        <img src="assets/img/profile.webp" alt="Portrait of Kshitij Raj" width="760" height="912" />
+        <div class="photo__badge">
+          <span class="badge__dot"></span> Available for hire
+        </div>
+      </div>
+
+      <div class="float-card float-card--1">
+        <span class="fc__k">3</span>
+        <span class="fc__v">Full-Stack<br>Projects</span>
+      </div>
+      <div class="float-card float-card--2">
+        <img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="" width="20" height="20" loading="lazy">
+        <span class="fc__v">Spring Boot<br>REST APIs</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Java</span><i>◆</i><span>Spring Boot</span><i>◆</i><span>Spring Security</span><i>◆</i><span>REST APIs</span><i>◆</i><span>React</span><i>◆</i><span>MySQL</span><i>◆</i><span>PostgreSQL</span><i>◆</i><span>Docker</span><i>◆</i><span>JWT</span><i>◆</i><span>Hibernate / JPA</span><i>◆</i>
+      <span>Java</span><i>◆</i><span>Spring Boot</span><i>◆</i><span>Spring Security</span><i>◆</i><span>REST APIs</span><i>◆</i><span>React</span><i>◆</i><span>MySQL</span><i>◆</i><span>PostgreSQL</span><i>◆</i><span>Docker</span><i>◆</i><span>JWT</span><i>◆</i><span>Hibernate / JPA</span><i>◆</i>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="sec__eyebrow">01 — About</p>
+      <h2 class="sec__title">A backend-leaning full-stack developer</h2>
+    </header>
+
+    <div class="about">
+      <div class="about__text reveal">
+        <p class="lead">
+          I'm a <strong>Java &amp; Web Developer</strong> comfortable across the entire software
+          development lifecycle — from architecting secure RESTful APIs with Spring Boot and
+          designing relational schemas, to crafting responsive, high-performance frontends.
+        </p>
+        <p>
+          Most of my depth sits on the backend: <strong>Spring Boot, Spring Security, JWT auth,
+          role-based access control, Spring Data JPA</strong> and clean layered architecture.
+          On the frontend I work with <strong>React</strong>, modern JavaScript and Tailwind to
+          build interfaces that feel fast and stay maintainable.
+        </p>
+        <p>
+          Across my three flagship projects I've shipped payment integration (Razorpay),
+          SMS notifications (Twilio), Swagger-documented APIs, JUnit + Mockito test suites,
+          Docker containerisation and live deployments on Render and Vercel.
+        </p>
+
+        <ul class="about__points">
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Secure API design — JWT, Spring Security, RBAC</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Relational data modelling with MySQL &amp; PostgreSQL</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Third-party integrations — payments, SMS, email</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dockerised builds &amp; live cloud deployments</li>
+        </ul>
+      </div>
+
+      <aside class="about__side reveal" data-delay="120">
+        <div class="stat-grid">
+          <div class="stat"><b data-count="3">0</b><span>Full-stack<br>projects shipped</span></div>
+          <div class="stat"><b data-count="3">0</b><span>Professional<br>certifications</span></div>
+          <div class="stat"><b data-count="14" data-suffix="+">0</b><span>Automated tests<br>written</span></div>
+          <div class="stat"><b data-count="15" data-suffix="+">0</b><span>Tools &amp;<br>technologies</span></div>
+        </div>
+
+        <div class="info-card">
+          <h3>Quick facts</h3>
+          <dl>
+            <div><dt>Degree</dt><dd>B.Tech, Information Technology</dd></div>
+            <div><dt>College</dt><dd>College of Engineering Roorkee</dd></div>
+            <div><dt>Graduated</dt><dd>June 2024</dd></div>
+            <div><dt>Focus</dt><dd>Java · Spring Boot · React</dd></div>
+            <div><dt>Location</dt><dd>Noida, Uttar Pradesh · Open to relocate</dd></div>
+            <div><dt>Status</dt><dd><span class="pill pill--live">Actively interviewing</span></dd></div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="sec sec--alt" id="skills">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="sec__eyebrow">02 — Skills</p>
+      <h2 class="sec__title">Technical toolkit</h2>
+      <p class="sec__sub">The stack I reach for when building and shipping applications.</p>
+    </header>
+
+    <div class="skills">
+      <article class="skill-card reveal">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+          </span>
+          <h3>Languages</h3>
+        </div>
+        <ul class="tech">
+          <li><img src="https://cdn.simpleicons.org/openjdk/FFFFFF" alt="" loading="lazy">Java</li>
+          <li><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy">JavaScript (ES6+)</li>
+          <li><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="" loading="lazy">SQL</li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-delay="60">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><path d="M6 7h.01M6 17h.01"/></svg>
+          </span>
+          <h3>Backend</h3>
+        </div>
+        <ul class="tech">
+          <li><img src="https://cdn.simpleicons.org/spring/6DB33F" alt="" loading="lazy">Spring Boot</li>
+          <li><img src="https://cdn.simpleicons.org/springsecurity/6DB33F" alt="" loading="lazy">Spring Security</li>
+          <li><img src="https://cdn.simpleicons.org/hibernate/59666C" alt="" loading="lazy">Spring Data JPA</li>
+          <li><img src="https://cdn.simpleicons.org/jsonwebtokens/D63AFF" alt="" loading="lazy">JWT Auth</li>
+          <li><span class="tech__glyph">{ }</span>REST APIs</li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-delay="120">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20"/></svg>
+          </span>
+          <h3>Frontend</h3>
+        </div>
+        <ul class="tech">
+          <li><img src="https://cdn.simpleicons.org/react/61DAFB" alt="" loading="lazy">React</li>
+          <li><img src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy">HTML5</li>
+          <li><img src="https://cdn.simpleicons.org/css/663399" alt="" loading="lazy">CSS3</li>
+          <li><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="" loading="lazy">Tailwind CSS</li>
+          <li><img src="https://cdn.simpleicons.org/axios/5A29E4" alt="" loading="lazy">Axios</li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-delay="180">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+          </span>
+          <h3>Databases</h3>
+        </div>
+        <ul class="tech">
+          <li><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="" loading="lazy">MySQL</li>
+          <li><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" loading="lazy">PostgreSQL</li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-delay="240">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><path d="M12 2 4 6v6c0 5 3.4 9 8 10 4.6-1 8-5 8-10V6z"/></svg>
+          </span>
+          <h3>Testing &amp; Docs</h3>
+        </div>
+        <ul class="tech">
+          <li><img src="https://cdn.simpleicons.org/junit5/25A162" alt="" loading="lazy">JUnit 5</li>
+          <li><span class="tech__glyph">M</span>Mockito</li>
+          <li><img src="https://cdn.simpleicons.org/swagger/85EA2D" alt="" loading="lazy">Swagger / OpenAPI</li>
+          <li><img src="https://cdn.simpleicons.org/postman/FF6C37" alt="" loading="lazy">Postman</li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-delay="300">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-9 6 6 0 0 0-11.6-1.6A4.5 4.5 0 0 0 6.5 19z"/></svg>
+          </span>
+          <h3>Tools &amp; Deployment</h3>
+        </div>
+        <ul class="tech">
+          <li><img src="https://cdn.simpleicons.org/docker/2496ED" alt="" loading="lazy">Docker</li>
+          <li><img src="https://cdn.simpleicons.org/git/F05032" alt="" loading="lazy">Git</li>
+          <li><img src="https://cdn.simpleicons.org/github/FFFFFF" alt="" loading="lazy">GitHub</li>
+          <li><img src="https://cdn.simpleicons.org/apachemaven/C71A36" alt="" loading="lazy">Maven</li>
+          <li><img src="https://cdn.simpleicons.org/render/000000" alt="" loading="lazy">Render</li>
+          <li><img src="https://cdn.simpleicons.org/vercel/FFFFFF" alt="" loading="lazy">Vercel</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="sec" id="projects">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="sec__eyebrow">03 — Projects</p>
+      <h2 class="sec__title">Selected work</h2>
+      <p class="sec__sub">Three full-stack applications, each built end to end and deployed live.</p>
+    </header>
+
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="shot">
+            <div class="shot__bar"><i></i><i></i><i></i><span>e-commerce-website-sable-pi.vercel.app</span></div>
+            <img id="shot-shop" src="assets/projects/shop-1.webp" width="1400" height="1060" loading="lazy"
+                 alt="Product catalogue showing seven items with prices, stock levels and add-to-cart buttons" />
+          </div>
+          <div class="shot-thumbs" data-gallery="shot-shop">
+            <button type="button" class="shot-thumb is-active" data-src="assets/projects/shop-1.webp"
+                    data-alt="Product catalogue showing seven items with prices, stock levels and add-to-cart buttons">
+              <img src="assets/projects/shop-1.webp" alt="" loading="lazy" /></button>
+            <button type="button" class="shot-thumb" data-src="assets/projects/shop-2.webp"
+                    data-alt="Storefront landing page highlighting Razorpay-powered secure checkout and order tracking">
+              <img src="assets/projects/shop-2.webp" alt="" loading="lazy" /></button>
+            <button type="button" class="shot-thumb" data-src="assets/projects/shop-3.webp"
+                    data-alt="Swagger UI listing the Users, Products and Orders REST endpoints">
+              <img src="assets/projects/shop-3.webp" alt="" loading="lazy" /></button>
+          </div>
+        </div>
+
+        <div class="project__body">
+          <div class="project__meta">
+            <span class="pill pill--num">01</span>
+            <span class="pill pill--live"><span class="badge__dot"></span> Live</span>
+          </div>
+          <h3 class="project__title">E-Commerce Platform</h3>
+          <p class="project__tag">Full-stack storefront with payments &amp; admin panel</p>
+
+          <ul class="project__points">
+            <li>JWT-secured, role-based product browsing, cart and checkout flows integrated with <strong>Razorpay</strong> payments.</li>
+            <li>Admin panel for product and order management, with REST APIs documented via <strong>Swagger</strong>.</li>
+            <li>Containerised with <strong>Docker</strong>; backend deployed on Render, frontend on Vercel.</li>
+          </ul>
+
+          <ul class="project__stack">
+            <li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>React</li><li>MySQL</li><li>Razorpay</li><li>JWT</li><li>Docker</li>
+          </ul>
+
+          <div class="project__links">
+            <a class="btn btn--sm btn--primary" href="https://e-commerce-website-sable-pi.vercel.app/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+            <a class="btn btn--sm btn--ghost" href="https://github.com/KshitijRaj0722/E-Commerce-website" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project project--flip reveal">
+        <div class="project__media">
+          <div class="shot">
+            <div class="shot__bar"><i></i><i></i><i></i><span>event-management-system-1qiv.vercel.app</span></div>
+            <img id="shot-events" src="assets/projects/events-1.webp" width="1400" height="689" loading="lazy"
+                 alt="Event discovery page with keyword, location, category and date filters over three event cards" />
+          </div>
+          <div class="shot-thumbs" data-gallery="shot-events">
+            <button type="button" class="shot-thumb is-active" data-src="assets/projects/events-1.webp"
+                    data-alt="Event discovery page with keyword, location, category and date filters over three event cards">
+              <img src="assets/projects/events-1.webp" alt="" loading="lazy" /></button>
+            <button type="button" class="shot-thumb" data-src="assets/projects/events-2.webp"
+                    data-alt="Admin Manage Events table with attendance, edit and delete controls per event">
+              <img src="assets/projects/events-2.webp" alt="" loading="lazy" /></button>
+            <button type="button" class="shot-thumb" data-src="assets/projects/events-3.webp"
+                    data-alt="My Registrations table listing a user's registered events with cancel actions">
+              <img src="assets/projects/events-3.webp" alt="" loading="lazy" /></button>
+          </div>
+        </div>
+
+        <div class="project__body">
+          <div class="project__meta">
+            <span class="pill pill--num">02</span>
+            <span class="pill pill--live"><span class="badge__dot"></span> Live</span>
+          </div>
+          <h3 class="project__title">EventHub</h3>
+          <p class="project__tag">Full-stack event management platform — discovery, registration &amp; admin</p>
+
+          <ul class="project__points">
+            <li>JWT-based authentication with <strong>role-based access control</strong>, plus event search and registration.</li>
+            <li>Admin dashboard and <strong>automated email reminders</strong> for upcoming registrations.</li>
+            <li><strong>14+ unit tests</strong> with JUnit &amp; Mockito; Dockerised and deployed on Render / Vercel.</li>
+          </ul>
+
+          <ul class="project__stack">
+            <li>Java</li><li>Spring Boot</li><li>React</li><li>MySQL</li><li>JWT</li><li>JUnit</li><li>Mockito</li><li>Docker</li>
+          </ul>
+
+          <div class="project__links">
+            <a class="btn btn--sm btn--primary" href="https://event-management-system-1qiv.vercel.app/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+            <a class="btn btn--sm btn--ghost" href="https://github.com/KshitijRaj0722/EventManagementSystem" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project reveal">
+        <div class="project__media">
+          <div class="shot">
+            <div class="shot__bar"><i></i><i></i><i></i><span>careernest-rho.vercel.app</span></div>
+            <img id="shot-career" src="assets/projects/career-1.webp" width="1400" height="875" loading="lazy"
+                 alt="Open positions list with keyword and location search across five job postings" />
+          </div>
+          <div class="shot-thumbs" data-gallery="shot-career">
+            <button type="button" class="shot-thumb is-active" data-src="assets/projects/career-1.webp"
+                    data-alt="Open positions list with keyword and location search across five job postings">
+              <img src="assets/projects/career-1.webp" alt="" loading="lazy" /></button>
+            <button type="button" class="shot-thumb" data-src="assets/projects/career-2.webp"
+                    data-alt="Employer dashboard for posting jobs and reviewing applicants on existing postings">
+              <img src="assets/projects/career-2.webp" alt="" loading="lazy" /></button>
+            <button type="button" class="shot-thumb" data-src="assets/projects/career-3.webp"
+                    data-alt="Sign-up form with a phone field for SMS updates and a Job Seeker or Employer role choice">
+              <img src="assets/projects/career-3.webp" alt="" loading="lazy" /></button>
+          </div>
+        </div>
+
+        <div class="project__body">
+          <div class="project__meta">
+            <span class="pill pill--num">03</span>
+            <span class="pill pill--live"><span class="badge__dot"></span> Live</span>
+          </div>
+          <h3 class="project__title">CareerNest</h3>
+          <p class="project__tag">Job portal with real-time SMS notifications</p>
+
+          <ul class="project__points">
+            <li>Spring Boot REST API with a <strong>React (Vite)</strong> frontend, secured by JWT and Spring Security.</li>
+            <li><strong>Twilio SDK</strong> integration for real-time SMS notifications on application updates.</li>
+            <li><strong>Spring Data JPA + PostgreSQL</strong> for persistence; Dockerised backend, frontend on Vercel.</li>
+          </ul>
+
+          <ul class="project__stack">
+            <li>Java</li><li>Spring Boot</li><li>React (Vite)</li><li>PostgreSQL</li><li>Spring Data JPA</li><li>Twilio</li><li>JWT</li><li>Docker</li>
+          </ul>
+
+          <div class="project__links">
+            <a class="btn btn--sm btn--primary" href="https://careernest-rho.vercel.app/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+            <a class="btn btn--sm btn--ghost" href="https://github.com/KshitijRaj0722/careernest" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="sec__foot reveal">
+      <a class="btn btn--ghost" href="https://github.com/KshitijRaj0722?tab=repositories" target="_blank" rel="noopener">
+        See all repositories on GitHub
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="sec sec--alt" id="certifications">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="sec__eyebrow">04 — Certifications</p>
+      <h2 class="sec__title">Verified credentials</h2>
+      <p class="sec__sub">Verified training in full-stack development, security and AI.</p>
+    </header>
+
+    <div class="certs">
+      <article class="cert reveal">
+        <div class="cert__logo"><img src="https://cdn.simpleicons.org/openjdk/FFFFFF" alt="" width="26" height="26" loading="lazy"></div>
+        <div class="cert__body">
+          <h3>Java Full-Stack Development</h3>
+          <p class="cert__issuer">GUVI Geeks — an HCL company</p>
+          <dl class="cert__meta">
+            <div><dt>Credential ID</dt><dd><code>E7MWjcBFVa9earyx</code></dd></div>
+            <div><dt>Issued</dt><dd>2025</dd></div>
+          </dl>
+          <a class="link" href="assets/certificates/guvi-fullstack.png" target="_blank" rel="noopener">
+            View certificate
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="cert reveal" data-delay="80">
+        <div class="cert__logo"><img src="https://cdn.simpleicons.org/cisco/1BA0D7" alt="" width="26" height="26" loading="lazy"></div>
+        <div class="cert__body">
+          <h3>Cybersecurity Essentials</h3>
+          <p class="cert__issuer">Cisco Networking Academy</p>
+          <dl class="cert__meta">
+            <div><dt>Verified by</dt><dd>Credly digital badge</dd></div>
+            <div><dt>Issued</dt><dd>January 2022</dd></div>
+          </dl>
+          <a class="link" href="https://www.credly.com/badges/00215311-7ad1-4dd8-a6b1-9b165104d277/public_url" target="_blank" rel="noopener">
+            Verify on Credly
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="cert reveal" data-delay="160">
+        <div class="cert__logo"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#4f9cf9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M3 12h3M18 12h3M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg></div>
+        <div class="cert__body">
+          <h3>Prompt Engineering for Everyone</h3>
+          <p class="cert__issuer">Cognitive Class — IBM Developer Skills Network</p>
+          <dl class="cert__meta">
+            <div><dt>Course code</dt><dd><code>AI0117EN</code></dd></div>
+            <div><dt>Issued</dt><dd>November 2024</dd></div>
+          </dl>
+          <a class="link" href="https://courses.cognitiveclass.ai/certificates/b6ebac243ee6422d9aec54de2029f546" target="_blank" rel="noopener">
+            Verify certificate
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="sec" id="blog">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="sec__eyebrow">05 — Writing</p>
+      <h2 class="sec__title">Notes from the build</h2>
+      <p class="sec__sub">Articles on the problems I hit while shipping these projects.</p>
+    </header>
+
+    <div class="blog">
+      <article class="post reveal">
+        <span class="post__tag">Spring Security</span>
+        <h3>Securing a Spring Boot API with JWT and role-based access</h3>
+        <p>A practical walkthrough of the filter chain, token generation, refresh strategy and the mistakes that cost me a weekend.</p>
+        <span class="post__meta" data-needs-link>Draft — coming soon</span>
+      </article>
+
+      <article class="post reveal" data-delay="80">
+        <span class="post__tag">Integrations</span>
+        <h3>Integrating Razorpay payments into a Spring Boot + React store</h3>
+        <p>Order creation, signature verification, webhook handling, and how to keep the payment flow idempotent.</p>
+        <span class="post__meta" data-needs-link>Draft — coming soon</span>
+      </article>
+
+      <article class="post reveal" data-delay="160">
+        <span class="post__tag">DevOps</span>
+        <h3>Dockerising a Spring Boot app and deploying it free on Render</h3>
+        <p>Multi-stage builds, slimming the image, environment configuration and connecting a managed PostgreSQL instance.</p>
+        <span class="post__meta" data-needs-link>Draft — coming soon</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec sec--alt" id="contact">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="sec__eyebrow">06 — Contact</p>
+      <h2 class="sec__title">Let's build something together</h2>
+      <p class="sec__sub">I'm actively looking for Java / Full-Stack developer roles. Fastest reply is email or LinkedIn.</p>
+    </header>
+
+    <div class="contact">
+      <div class="contact__info reveal">
+        <a class="cinfo" href="mailto:Kshitijraj22@gmail.com">
+          <span class="cinfo__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
+          <span class="cinfo__t"><b>Email</b>Kshitijraj22@gmail.com</span>
+        </a>
+        <a class="cinfo" href="tel:+917519914746">
+          <span class="cinfo__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span class="cinfo__t"><b>Phone</b>+91 75199 14746</span>
+        </a>
+        <a class="cinfo" href="https://www.linkedin.com/in/kshitij-raj0722" target="_blank" rel="noopener">
+          <span class="cinfo__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.07-1.9-3.07-1.9 0-2.2 1.46-2.2 2.97V21H9z"/></svg></span>
+          <span class="cinfo__t"><b>LinkedIn</b>/in/kshitij-raj0722</span>
+        </a>
+        <a class="cinfo" href="https://github.com/KshitijRaj0722" target="_blank" rel="noopener">
+          <span class="cinfo__ico"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></span>
+          <span class="cinfo__t"><b>GitHub</b>@KshitijRaj0722</span>
+        </a>
+
+        <div class="contact__resume">
+          <p>Prefer the one-pager?</p>
+          <a class="btn btn--primary btn--sm" href="assets/resume/Kshitij_Raj_Resume.pdf" download>
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 21h16"/></svg>
+            Download Résumé (PDF)
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" action="https://formspree.io/f/meaqnnde" method="POST">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" required placeholder="Your name" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="cf-subject">Subject</label>
+          <input id="cf-subject" name="subject" type="text" placeholder="Opportunity / collaboration" />
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" rows="5" required placeholder="Tell me about the role or project…"></textarea>
+        </div>
+        <button class="btn btn--primary btn--block" type="submit">
+          Send Message
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/></svg>
+        </button>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="brand__mark">KR</span>
+      <div>
+        <b>Kshitij Raj</b>
+        <span>Java Full Stack Developer</span>
+      </div>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="footer__copy">© <span id="year">2026</span> Kshitij Raj. Built with HTML, CSS &amp; vanilla JavaScript.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

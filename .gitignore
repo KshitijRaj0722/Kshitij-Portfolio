@@ -1,0 +1,11 @@
+# Local tooling — dev server, preview bundler, one-off scripts.
+# None of this is part of the deployed site.
+.claude/
+
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
