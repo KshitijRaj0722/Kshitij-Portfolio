@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kshitij Raj — Résumé</title>
+<style>
+/* ==========================================================================
+   Print-ready résumé. Open in a browser → Ctrl/Cmd + P → Save as PDF.
+   Set margins to "Default" and DISABLE "Headers and footers".
+   Single column, real text, standard headings — parses cleanly in ATS.
+   ========================================================================== */
+
+:root {
+  --ink:      #14181f;
+  --ink-mid:  #3d4654;
+  --ink-dim:  #5d6775;
+  --accent:   #b4551c;
+  --rule:     #d5d9e0;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  font-size: 9.9pt;
+  line-height: 1.31;
+  color: var(--ink);
+  background: #eef0f4;
+  padding: 24px 12px;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 11mm 13mm 10mm;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .14);
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+/* ---------- Header ---------- */
+.name {
+  font-size: 21pt;
+  font-weight: 700;
+  letter-spacing: -.4px;
+  line-height: 1.1;
+}
+.role {
+  font-size: 11pt;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 2px;
+  letter-spacing: .2px;
+}
+.contact {
+  margin-top: 5px;
+  font-size: 9pt;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+.contact span::after { content: "  ·  "; color: var(--rule); }
+.contact span:last-child::after { content: ""; }
+
+/* ---------- Sections ---------- */
+h2 {
+  font-size: 9.6pt;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 7px 0 4px;
+  padding-bottom: 3px;
+  border-bottom: 1.2px solid var(--rule);
+}
+
+p.summary { font-size: 9.5pt; color: var(--ink-mid); text-align: justify; }
+
+/* ---------- Skills ---------- */
+.skills { display: grid; grid-template-columns: 76px 1fr; gap: 1.5px 10px; font-size: 9.1pt; }
+.skills dt { font-weight: 700; color: var(--ink); }
+.skills dd { color: var(--ink-mid); margin: 0; }
+
+/* ---------- Projects ---------- */
+.proj { margin-bottom: 5.5px; break-inside: avoid; }
+.proj:last-child { margin-bottom: 2px; }
+
+.proj__head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+}
+.proj__name { font-size: 10.2pt; font-weight: 700; }
+.proj__links { font-size: 8.8pt; white-space: nowrap; }
+
+.proj__stack {
+  font-size: 8.6pt; color: var(--ink-dim); margin: 0 0 2px; font-style: italic;
+}
+
+.proj ul { margin: 0; padding-left: 14px; }
+.proj li { font-size: 9.35pt; color: var(--ink-mid); margin-bottom: 1px; }
+.proj li strong { color: var(--ink); font-weight: 600; }
+
+/* ---------- Certifications & education ---------- */
+.rows { display: grid; gap: 2px; }
+.row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  font-size: 9.2pt;
+}
+.row__main { color: var(--ink); }
+.row__main b { font-weight: 700; }
+.row__main span { color: var(--ink-dim); }
+.row__meta { color: var(--ink-dim); font-size: 9pt; white-space: nowrap; }
+
+/* ---------- Print ---------- */
+@media print {
+  @page { size: A4; margin: 11mm 12mm; }
+  body { background: #fff; padding: 0; font-size: 9.9pt; }
+  .page { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+  a { color: var(--accent); }
+  .no-print { display: none !important; }
+}
+
+/* On-screen hint only */
+.no-print {
+  max-width: 210mm; margin: 0 auto 14px;
+  padding: 10px 14px; border-radius: 8px;
+  background: #fff7ed; border: 1px solid #f0c9a6;
+  font-size: 9.5pt; color: #8a4a1c;
+}
+.no-print b { color: #b4551c; }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <b>To export:</b> press <b>Ctrl&nbsp;+&nbsp;P</b> (or Cmd&nbsp;+&nbsp;P) → Destination
+  <b>Save as PDF</b> → Margins <b>Default</b> → turn <b>off</b> “Headers and footers” → Save.
+  Save it over <code>assets/resume/Kshitij_Raj_Resume.pdf</code> to update the portfolio download.
+</div>
+
+<div class="page">
+
+  <header>
+    <div class="name">Kshitij Raj</div>
+    <div class="role">Java Full Stack Developer</div>
+    <div class="contact">
+      <span>Kshitijraj22@gmail.com</span>
+      <span>+91 75199 14746</span>
+      <span>Noida, Uttar Pradesh</span><br>
+      <span><a href="https://kshitijraj0722.github.io/Kshitij-Portfolio/">kshitijraj0722.github.io/Kshitij-Portfolio</a></span>
+      <span><a href="https://github.com/KshitijRaj0722">github.com/KshitijRaj0722</a></span>
+      <span><a href="https://www.linkedin.com/in/kshitij-raj0722">linkedin.com/in/kshitij-raj0722</a></span>
+    </div>
+  </header>
+
+  <h2>Profile</h2>
+  <p class="summary">
+    Java Full Stack Developer who has designed and deployed three production-grade
+    Spring&nbsp;Boot applications — <strong>51 REST endpoints</strong> and <strong>159 automated
+    tests</strong> in total. Comfortable securing APIs with Spring Security and JWT, modelling
+    relational and document databases, integrating third-party payment and messaging
+    providers, and shipping React frontends to live cloud deployments.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt>
+    <dd>Java 17, JavaScript (ES6+), SQL</dd>
+
+    <dt>Core Java</dt>
+    <dd>OOP &amp; SOLID, Collections Framework, Generics, Streams &amp; Lambdas, Optional,
+        Exception Handling, Multithreading &amp; Concurrency, Java&nbsp;8+ features</dd>
+
+    <dt>Backend</dt>
+    <dd>Spring Boot 3.x, Spring Security, Spring Data JPA / Hibernate, Spring Data MongoDB,
+        REST API design, JWT authentication, Bean Validation, Scheduled jobs</dd>
+
+    <dt>Frontend</dt>
+    <dd>React, Vite, HTML5, CSS3, Tailwind CSS, Axios</dd>
+
+    <dt>Databases</dt>
+    <dd>MySQL, PostgreSQL, MongoDB (Atlas)</dd>
+
+    <dt>Testing</dt>
+    <dd>JUnit 5, Mockito, Spring Boot Test, MockMvc, H2</dd>
+
+    <dt>Tools</dt>
+    <dd>Git &amp; GitHub, Maven, Docker, Postman, Swagger / OpenAPI, Render, Vercel</dd>
+  </dl>
+
+  <h2>Projects</h2>
+
+  <div class="proj">
+    <div class="proj__head">
+      <div class="proj__name">E-Commerce Platform</div>
+      <div class="proj__links">
+        <a href="https://e-commerce-website-sable-pi.vercel.app/">Live</a> ·
+        <a href="https://github.com/KshitijRaj0722/E-Commerce-website">Code</a>
+      </div>
+    </div>
+    <div class="proj__stack">Java 17 · Spring Boot 3.2.5 · Spring Security · React · MySQL · Razorpay · Swagger · Docker</div>
+    <ul>
+      <li>Built a full-stack storefront exposing <strong>20 REST endpoints</strong> across
+          5 controllers over <strong>5 JPA entities</strong>, with JWT-secured browsing,
+          cart and checkout.</li>
+      <li>Integrated <strong>Razorpay</strong> payments with server-side HMAC signature
+          verification, so an order can never be marked paid by the client.</li>
+      <li>Wrote <strong>86 tests across 13 classes</strong> — Mockito service tests,
+          <code>@WebMvcTest</code> controller slices, <code>@DataJpaTest</code> repository
+          tests and a full end-to-end purchase workflow.</li>
+      <li>Documented all 20 endpoints with <strong>Swagger / OpenAPI</strong>; containerised with
+          a multi-stage Dockerfile and deployed to Render + Vercel.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj__head">
+      <div class="proj__name">EventHub — Event Management Platform</div>
+      <div class="proj__links">
+        <a href="https://event-management-system-1qiv.vercel.app/">Live</a> ·
+        <a href="https://github.com/KshitijRaj0722/EventManagementSystem">Code</a>
+      </div>
+    </div>
+    <div class="proj__stack">Java 17 · Spring Boot 3.2.5 · React · PostgreSQL · JWT · JUnit 5 · Mockito · Docker</div>
+    <ul>
+      <li>Designed <strong>18 REST endpoints</strong> over 5 entities with role-based access
+          control, filtered event search, an admin dashboard and attendance tracking.</li>
+      <li>Prevented double-booking with a composite <strong>database-level unique
+          constraint</strong> on <code>(user_id, event_id)</code> — closing the race window
+          an application-level check would leave open.</li>
+      <li>Wrote <strong>72 tests across 12 classes</strong> running against in-memory H2, so
+          the suite needs no external database.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj__head">
+      <div class="proj__name">CareerNest — Job Portal</div>
+      <div class="proj__links">
+        <a href="https://careernest-rho.vercel.app/">Live</a> ·
+        <a href="https://github.com/KshitijRaj0722/careernest">Code</a>
+      </div>
+    </div>
+    <div class="proj__stack">Java 17 · Spring Boot 3.3.2 · React (Vite) · MongoDB Atlas · Twilio · JWT · Docker</div>
+    <ul>
+      <li>Built a two-sided job portal with <strong>13 REST endpoints</strong> across
+          4 controllers, persisted in <strong>MongoDB Atlas</strong> via Spring Data MongoDB
+          across 3 collections.</li>
+      <li>Enforced <strong>JOB_SEEKER / EMPLOYER</strong> separation with method-level
+          security plus ownership checks, so an employer cannot modify another's postings.</li>
+      <li>Integrated the <strong>Twilio SDK</strong> to send real-time SMS when an
+          application's status changes.</li>
+    </ul>
+  </div>
+
+  <h2>Certifications</h2>
+  <div class="rows">
+    <div class="row">
+      <div class="row__main"><b>Java Full-Stack Development</b> <span>— GUVI Geeks (an HCL company)</span></div>
+      <div class="row__meta">2025 · ID E7MWjcBFVa9earyx</div>
+    </div>
+    <div class="row">
+      <div class="row__main"><b>Cybersecurity Essentials</b> <span>— Cisco Networking Academy</span></div>
+      <div class="row__meta">Jan 2022 · Credly verified</div>
+    </div>
+    <div class="row">
+      <div class="row__main"><b>Prompt Engineering for Everyone</b> <span>— Cognitive Class, IBM Developer Skills Network</span></div>
+      <div class="row__meta">Nov 2024 · AI0117EN</div>
+    </div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="rows">
+    <div class="row">
+      <div class="row__main"><b>B.Tech, Information Technology</b> <span>— College of Engineering Roorkee</span></div>
+      <div class="row__meta">2020 – 2024 · 68.4%</div>
+    </div>
+    <div class="row">
+      <div class="row__main"><b>Intermediate (Science) &amp; Matriculation</b> <span>— B D Public School, Patna</span></div>
+      <div class="row__meta">2020 · 72.62%  |  2018 · 80%</div>
+    </div>
+    <div class="row">
+      <div class="row__main"><b>Coordinator</b> <span>— OORJA Cultural Committee, College of Engineering Roorkee</span></div>
+      <div class="row__meta">2020 – 2024</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
