@@ -7,7 +7,7 @@
 
 <meta name="description" content="Kshitij Raj — Java Full Stack Developer specialising in Spring Boot, REST APIs, React and MySQL. B.Tech IT graduate building secure, production-grade web applications." />
 <meta name="author" content="Kshitij Raj" />
-<meta name="keywords" content="Kshitij Raj, Java Developer, Full Stack Developer, Spring Boot, React, REST API, MySQL, PostgreSQL, Docker, Backend Developer, Fresher" />
+<meta name="keywords" content="Kshitij Raj, Java Developer, Full Stack Developer, Spring Boot, React, REST API, MySQL, PostgreSQL, MongoDB, Docker, JUnit, Backend Developer, Fresher" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://kshitijraj0722.github.io/Kshitij-Portfolio/" />
 
@@ -40,7 +40,7 @@
     "https://github.com/KshitijRaj0722"
   ],
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "College of Engineering Roorkee" },
-  "knowsAbout": ["Java", "Spring Boot", "Spring Security", "REST APIs", "React", "MySQL", "PostgreSQL", "Docker"]
+  "knowsAbout": ["Java", "Spring Boot", "Spring Security", "REST APIs", "React", "MySQL", "PostgreSQL", "MongoDB", "Docker", "JUnit", "Data Structures and Algorithms"]
 }
 </script>
 </head>
@@ -62,7 +62,6 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
-      <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
       <a class="btn btn--sm btn--primary nav__cta" href="assets/resume/Kshitij_Raj_Resume.pdf" download>Resume</a>
     </nav>
@@ -194,10 +193,12 @@
 
       <aside class="about__side reveal" data-delay="120">
         <div class="stat-grid">
-          <div class="stat"><b data-count="3">0</b><span>Full-stack<br>projects shipped</span></div>
-          <div class="stat"><b data-count="3">0</b><span>Professional<br>certifications</span></div>
-          <div class="stat"><b data-count="14" data-suffix="+">0</b><span>Automated tests<br>written</span></div>
-          <div class="stat"><b data-count="15" data-suffix="+">0</b><span>Tools &amp;<br>technologies</span></div>
+          <!-- Real values are rendered server-side. JS animates from 0 only if it
+               runs; if it never does, the correct number is already on screen. -->
+          <div class="stat"><b data-count="3">3</b><span>Full-stack<br>projects shipped</span></div>
+          <div class="stat"><b data-count="51">51</b><span>REST endpoints<br>designed</span></div>
+          <div class="stat"><b data-count="159">159</b><span>Automated tests<br>written</span></div>
+          <div class="stat"><b data-count="3">3</b><span>Professional<br>certifications</span></div>
         </div>
 
         <div class="info-card">
@@ -226,15 +227,52 @@
     </header>
 
     <div class="skills">
-      <article class="skill-card reveal">
+      <article class="skill-card skill-card--wide reveal">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 1.8.9 3.3 2.3 4.2C8 12.2 7 13.9 7 16a5 5 0 0 0 10 0c0-2.1-1-3.8-2.3-4.8A5 5 0 0 0 17 7a5 5 0 0 0-5-5z"/><path d="M12 11v5"/></svg>
+          </span>
+          <h3>Core Java</h3>
+        </div>
+        <ul class="tech">
+          <li><img src="https://cdn.simpleicons.org/openjdk/FFFFFF" alt="" loading="lazy">Java 17</li>
+          <li><span class="tech__glyph">OOP</span>OOP &amp; SOLID</li>
+          <li><span class="tech__glyph">&lt;T&gt;</span>Generics</li>
+          <li><span class="tech__glyph">[ ]</span>Collections Framework</li>
+          <li><span class="tech__glyph">λ</span>Streams &amp; Lambdas</li>
+          <li><span class="tech__glyph">?</span>Optional</li>
+          <li><span class="tech__glyph">!</span>Exception Handling</li>
+          <li><span class="tech__glyph">⇉</span>Multithreading &amp; Concurrency</li>
+          <li><span class="tech__glyph">8+</span>Java 8+ Features</li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-delay="30">
         <div class="skill-card__top">
           <span class="skill-card__ico">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
           </span>
-          <h3>Languages</h3>
+          <h3>Problem Solving</h3>
         </div>
         <ul class="tech">
-          <li><img src="https://cdn.simpleicons.org/openjdk/FFFFFF" alt="" loading="lazy">Java</li>
+          <li><span class="tech__glyph">DSA</span>DSA in Java</li>
+          <li><span class="tech__glyph">{}</span>Arrays &amp; Strings</li>
+          <li><span class="tech__glyph">#</span>HashMap &amp; HashSet</li>
+          <li><span class="tech__glyph">↻</span>Recursion</li>
+          <li><span class="tech__glyph">◇</span>Sorting &amp; Searching</li>
+          <li><span class="tech__glyph">⌥</span>Linked List, Stack, Queue</li>
+          <li><span class="tech__glyph">⟨⟩</span>Time &amp; Space Complexity</li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-delay="60">
+        <div class="skill-card__top">
+          <span class="skill-card__ico">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20"/></svg>
+          </span>
+          <h3>Other Languages</h3>
+        </div>
+        <ul class="tech">
           <li><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy">JavaScript (ES6+)</li>
           <li><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="" loading="lazy">SQL</li>
         </ul>
@@ -253,6 +291,9 @@
           <li><img src="https://cdn.simpleicons.org/hibernate/59666C" alt="" loading="lazy">Spring Data JPA</li>
           <li><img src="https://cdn.simpleicons.org/jsonwebtokens/D63AFF" alt="" loading="lazy">JWT Auth</li>
           <li><span class="tech__glyph">{ }</span>REST APIs</li>
+          <li><span class="tech__glyph">@</span>Bean Validation</li>
+          <li><span class="tech__glyph">⏱</span>@Scheduled Jobs</li>
+          <li><span class="tech__glyph">⚠</span>@RestControllerAdvice</li>
         </ul>
       </article>
 
@@ -282,6 +323,8 @@
         <ul class="tech">
           <li><img src="https://cdn.simpleicons.org/mysql/4479A1" alt="" loading="lazy">MySQL</li>
           <li><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" loading="lazy">PostgreSQL</li>
+          <li><img src="https://cdn.simpleicons.org/mongodb/47A248" alt="" loading="lazy">MongoDB</li>
+          <li><img src="https://cdn.simpleicons.org/hibernate/59666C" alt="" loading="lazy">Spring Data MongoDB</li>
         </ul>
       </article>
 
@@ -359,15 +402,28 @@
           </div>
           <h3 class="project__title">E-Commerce Platform</h3>
           <p class="project__tag">Full-stack storefront with payments &amp; admin panel</p>
+          <dl class="project__spec">
+            <div><dt>Java</dt><dd>17</dd></div>
+            <div><dt>Spring Boot</dt><dd>3.2.5</dd></div>
+            <div><dt>Build</dt><dd>Maven</dd></div>
+            <div><dt>DB</dt><dd>MySQL / PostgreSQL</dd></div>
+            <div><dt>Docs</dt><dd>springdoc 2.5.0</dd></div>
+          </dl>
+          <div class="project__metrics">
+            <div class="metric"><b>20</b><span>REST endpoints</span></div>
+            <div class="metric"><b>86</b><span>JUnit tests</span></div>
+            <div class="metric"><b>5</b><span>JPA entities</span></div>
+            <div class="metric"><b>13</b><span>test classes</span></div>
+          </div>
 
           <ul class="project__points">
-            <li>JWT-secured, role-based product browsing, cart and checkout flows integrated with <strong>Razorpay</strong> payments.</li>
-            <li>Admin panel for product and order management, with REST APIs documented via <strong>Swagger</strong>.</li>
-            <li>Containerised with <strong>Docker</strong>; backend deployed on Render, frontend on Vercel.</li>
+            <li>JWT-secured browsing, cart and checkout across <strong>5 JPA entities</strong>, with <strong>Razorpay</strong> payments verified server-side by signature.</li>
+            <li>Admin panel for product and order management; all <strong>20 endpoints documented with Swagger / OpenAPI</strong> (springdoc 2.5.0).</li>
+            <li><strong>86 tests across 13 classes</strong> (unit, @WebMvcTest, @DataJpaTest, end-to-end); Dockerised on Render + Vercel.</li>
           </ul>
 
           <ul class="project__stack">
-            <li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>React</li><li>MySQL</li><li>Razorpay</li><li>JWT</li><li>Docker</li>
+            <li>Java 17</li><li>Spring Boot 3.2.5</li><li>Spring Security</li><li>React</li><li>MySQL</li><li>Razorpay</li><li>Swagger</li><li>Docker</li>
           </ul>
 
           <div class="project__links">
@@ -381,6 +437,131 @@
             </a>
           </div>
         </div>
+        <details class="arch">
+          <summary>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            Architecture, data model &amp; testing
+          </summary>
+          <div class="arch__body">
+            <div>
+              <div class="arch__figure"><svg viewBox="0 0 690 210" role="img" aria-label="React SPA through JWT filter, controller, service and repository layers to MySQL, with Razorpay alongside the service layer" xmlns="http://www.w3.org/2000/svg">
+  <text x="12" y="18" font-family="JetBrains Mono, monospace" font-size="9.5"
+        letter-spacing="1.4" fill="var(--text-dim)">REQUEST FLOW</text>
+  
+    <rect x="12" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="71" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">React SPA</text>
+    <text x="71" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">React + Axios</text>
+  
+    <line x1="130" y1="71" x2="145" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M145 67 L152 71 L145 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="152" y="44" width="118" height="54" rx="9"
+          fill="var(--surface-2)"
+          stroke="var(--accent)" stroke-width="1.2"/>
+    <text x="211" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--accent)">JWT Filter</text>
+    <text x="211" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">Spring Security</text>
+  
+    <line x1="270" y1="71" x2="285" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M285 67 L292 71 L285 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="292" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="351" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Controller</text>
+    <text x="351" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">5 controllers</text>
+  
+    <line x1="410" y1="71" x2="425" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M425 67 L432 71 L425 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="432" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="491" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Service</text>
+    <text x="491" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">business logic</text>
+  
+    <line x1="550" y1="71" x2="565" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M565 67 L572 71 L565 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="572" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="631" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Repository</text>
+    <text x="631" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">Spring Data JPA</text>
+
+  
+    <line x1="631" y1="98" x2="631" y2="141" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="3 3"/>
+    <path d="M627 141 L631 148 L635 141 Z" fill="var(--text-dim)"/>
+  
+    <rect x="562" y="148" width="138" height="46" rx="9"
+          fill="var(--surface-2)"
+          stroke="var(--accent)" stroke-width="1.2"/>
+    <text x="631" y="171" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--accent)">MySQL / PostgreSQL</text>
+    <text x="631" y="187" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">5 tables</text>
+
+  
+    <line x1="491" y1="98" x2="491" y2="141" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="3 3"/>
+    <path d="M487 141 L491 148 L495 141 Z" fill="var(--text-dim)"/>
+  
+    <rect x="410" y="148" width="138" height="46" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="479" y="171" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Razorpay</text>
+    <text x="479" y="187" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">razorpay-java 1.4.5</text>
+</svg></div>
+              <p class="arch__cap">Layered Spring Boot architecture — every request passes the JWT filter before reaching a controller.</p>
+            </div>
+            <div>
+              <h4>Data model</h4>
+              <ul class="erd">
+                <li><code>User</code><span class="card">1 — N</span><code>Order</code><em>a user places many orders</em></li>
+                <li><code>Order</code><span class="card">1 — N</span><code>OrderItem</code><em>cascade ALL, eager fetch</em></li>
+                <li><code>OrderItem</code><span class="card">N — 1</span><code>Product</code><em>price snapshot at purchase</em></li>
+                <li><code>User</code><span class="card">1 — N</span><code>CartItem</code><em>lazy fetch, JSON-ignored</em></li>
+                <li><code>CartItem</code><span class="card">N — 1</span><code>Product</code><em>eager fetch for display</em></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Implementation notes</h4>
+              <ul class="arch__notes">
+                <li><strong>Security:</strong> stateless JWT (jjwt) with a <code>OncePerRequestFilter</code>, BCrypt hashing, and role-based access separating <code>ROLE_USER</code> from <code>ROLE_ADMIN</code>. Custom <code>AuthenticationEntryPoint</code> and <code>AccessDeniedHandler</code> return JSON rather than HTML error pages.</li>
+                <li><strong>Payments:</strong> Razorpay order creation followed by server-side signature verification on <code>POST /api/orders/verify-payment</code> — the client is never trusted to confirm a payment.</li>
+                <li><strong>Error handling:</strong> a <code>@RestControllerAdvice</code> global handler maps <code>ResourceNotFoundException</code> and <code>BadRequestException</code> onto a consistent <code>ApiError</code> body.</li>
+                <li><strong>Testing:</strong> 86 tests across 13 classes — service unit tests with Mockito, <code>@WebMvcTest</code> controller slices, <code>@DataJpaTest</code> repository tests, and a full end-to-end workflow test.</li>
+                <li><strong>Deployment:</strong> multi-stage Dockerfile; an <code>EnvironmentPostProcessor</code> rewrites Render’s <code>DATABASE_URL</code> into JDBC form at boot.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
       </article>
 
       <!-- Project 2 -->
@@ -411,15 +592,28 @@
           </div>
           <h3 class="project__title">EventHub</h3>
           <p class="project__tag">Full-stack event management platform — discovery, registration &amp; admin</p>
+          <dl class="project__spec">
+            <div><dt>Java</dt><dd>17</dd></div>
+            <div><dt>Spring Boot</dt><dd>3.2.5</dd></div>
+            <div><dt>Build</dt><dd>Maven</dd></div>
+            <div><dt>DB</dt><dd>MySQL / PostgreSQL</dd></div>
+            <div><dt>Tests</dt><dd>H2 in-memory</dd></div>
+          </dl>
+          <div class="project__metrics">
+            <div class="metric"><b>18</b><span>REST endpoints</span></div>
+            <div class="metric"><b>72</b><span>JUnit tests</span></div>
+            <div class="metric"><b>5</b><span>JPA entities</span></div>
+            <div class="metric"><b>12</b><span>test classes</span></div>
+          </div>
 
           <ul class="project__points">
-            <li>JWT-based authentication with <strong>role-based access control</strong>, plus event search and registration.</li>
+            <li><strong>18 REST endpoints</strong> over 5 entities, with JWT auth, role-based access control and filtered event search.</li>
             <li>Admin dashboard and <strong>automated email reminders</strong> for upcoming registrations.</li>
-            <li><strong>14+ unit tests</strong> with JUnit &amp; Mockito; Dockerised and deployed on Render / Vercel.</li>
+            <li><strong>72 tests across 12 classes</strong> (JUnit 5, Mockito, H2); Dockerised and deployed on Render / Vercel.</li>
           </ul>
 
           <ul class="project__stack">
-            <li>Java</li><li>Spring Boot</li><li>React</li><li>MySQL</li><li>JWT</li><li>JUnit</li><li>Mockito</li><li>Docker</li>
+            <li>Java 17</li><li>Spring Boot 3.2.5</li><li>React</li><li>MySQL</li><li>JWT</li><li>JUnit 5</li><li>Mockito</li><li>Docker</li>
           </ul>
 
           <div class="project__links">
@@ -433,6 +627,131 @@
             </a>
           </div>
         </div>
+        <details class="arch">
+          <summary>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            Architecture, data model &amp; testing
+          </summary>
+          <div class="arch__body">
+            <div>
+              <div class="arch__figure"><svg viewBox="0 0 690 210" role="img" aria-label="React SPA through JWT filter, controller, service and repository layers to MySQL, with the mail scheduler alongside the service layer" xmlns="http://www.w3.org/2000/svg">
+  <text x="12" y="18" font-family="JetBrains Mono, monospace" font-size="9.5"
+        letter-spacing="1.4" fill="var(--text-dim)">REQUEST FLOW</text>
+  
+    <rect x="12" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="71" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">React SPA</text>
+    <text x="71" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">React + Axios</text>
+  
+    <line x1="130" y1="71" x2="145" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M145 67 L152 71 L145 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="152" y="44" width="118" height="54" rx="9"
+          fill="var(--surface-2)"
+          stroke="var(--accent)" stroke-width="1.2"/>
+    <text x="211" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--accent)">JWT Filter</text>
+    <text x="211" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">Spring Security</text>
+  
+    <line x1="270" y1="71" x2="285" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M285 67 L292 71 L285 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="292" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="351" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Controller</text>
+    <text x="351" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">5 controllers</text>
+  
+    <line x1="410" y1="71" x2="425" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M425 67 L432 71 L425 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="432" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="491" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Service</text>
+    <text x="491" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">business logic</text>
+  
+    <line x1="550" y1="71" x2="565" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M565 67 L572 71 L565 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="572" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="631" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Repository</text>
+    <text x="631" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">Spring Data JPA</text>
+
+  
+    <line x1="631" y1="98" x2="631" y2="141" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="3 3"/>
+    <path d="M627 141 L631 148 L635 141 Z" fill="var(--text-dim)"/>
+  
+    <rect x="562" y="148" width="138" height="46" rx="9"
+          fill="var(--surface-2)"
+          stroke="var(--accent)" stroke-width="1.2"/>
+    <text x="631" y="171" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--accent)">MySQL / PostgreSQL</text>
+    <text x="631" y="187" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">6 tables</text>
+
+  
+    <line x1="491" y1="98" x2="491" y2="141" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="3 3"/>
+    <path d="M487 141 L491 148 L495 141 Z" fill="var(--text-dim)"/>
+  
+    <rect x="410" y="148" width="138" height="46" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="479" y="171" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Mail Scheduler</text>
+    <text x="479" y="187" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">@Scheduled + SMTP</text>
+</svg></div>
+              <p class="arch__cap">Interface-and-implementation service layer, with a scheduled job driving reminder emails.</p>
+            </div>
+            <div>
+              <h4>Data model</h4>
+              <ul class="erd">
+                <li><code>User</code><span class="card">1 — N</span><code>Registration</code><em>one row per signup</em></li>
+                <li><code>Event</code><span class="card">1 — N</span><code>Registration</code><em>capacity enforced in service</em></li>
+                <li><code>Registration</code><span class="card">UNIQUE</span><code>(user_id, event_id)</code><em>DB-level guard against double booking</em></li>
+                <li><code>Event</code><span class="card">N — N</span><code>Speaker</code><em>join table <code>event_speakers</code></em></li>
+                <li><code>User</code><span class="card">enum</span><code>Role</code><em>STRING-persisted, not ordinal</em></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Implementation notes</h4>
+              <ul class="arch__notes">
+                <li><strong>Data integrity:</strong> duplicate registrations are blocked by a composite <code>@UniqueConstraint</code> on <code>(user_id, event_id)</code> — enforced by the database, not just application code, so a race between two requests still cannot double-book.</li>
+                <li><strong>Many-to-many:</strong> events and speakers are joined through an <code>event_speakers</code> table with <code>LAZY</code> fetching to avoid loading speaker graphs on list views.</li>
+                <li><strong>Scheduling:</strong> <code>EventReminderScheduler</code> runs on <code>@Scheduled</code> and dispatches reminder emails via <code>spring-boot-starter-mail</code>.</li>
+                <li><strong>Layering:</strong> every service is split into an interface plus an <code>Impl</code> class, so controllers depend on abstractions and tests can substitute mocks cleanly.</li>
+                <li><strong>Testing:</strong> 72 tests across 12 classes, run against an in-memory H2 database so the suite needs no external services. Actuator is exposed for health checks.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
       </article>
 
       <!-- Project 3 -->
@@ -463,15 +782,28 @@
           </div>
           <h3 class="project__title">CareerNest</h3>
           <p class="project__tag">Job portal with real-time SMS notifications</p>
+          <dl class="project__spec">
+            <div><dt>Java</dt><dd>17</dd></div>
+            <div><dt>Spring Boot</dt><dd>3.3.2</dd></div>
+            <div><dt>Build</dt><dd>Maven</dd></div>
+            <div><dt>DB</dt><dd>MongoDB Atlas</dd></div>
+            <div><dt>SMS</dt><dd>Twilio 12.1.1</dd></div>
+          </dl>
+          <div class="project__metrics">
+            <div class="metric"><b>13</b><span>REST endpoints</span></div>
+            <div class="metric"><b>3</b><span>collections</span></div>
+            <div class="metric"><b>2</b><span>user roles</span></div>
+            <div class="metric"><b>1</b><span>SMS provider</span></div>
+          </div>
 
           <ul class="project__points">
-            <li>Spring Boot REST API with a <strong>React (Vite)</strong> frontend, secured by JWT and Spring Security.</li>
+            <li><strong>13 REST endpoints</strong> across 4 controllers, secured by stateless JWT and Spring Security with JOB_SEEKER / EMPLOYER role separation.</li>
             <li><strong>Twilio SDK</strong> integration for real-time SMS notifications on application updates.</li>
-            <li><strong>Spring Data JPA + PostgreSQL</strong> for persistence; Dockerised backend, frontend on Vercel.</li>
+            <li><strong>Spring Data MongoDB</strong> over MongoDB Atlas across 3 collections; Dockerised backend, frontend on Vercel.</li>
           </ul>
 
           <ul class="project__stack">
-            <li>Java</li><li>Spring Boot</li><li>React (Vite)</li><li>PostgreSQL</li><li>Spring Data JPA</li><li>Twilio</li><li>JWT</li><li>Docker</li>
+            <li>Java 17</li><li>Spring Boot 3.3.2</li><li>React (Vite)</li><li>MongoDB</li><li>Spring Data MongoDB</li><li>Twilio</li><li>JWT</li><li>Docker</li>
           </ul>
 
           <div class="project__links">
@@ -485,6 +817,131 @@
             </a>
           </div>
         </div>
+        <details class="arch">
+          <summary>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            Architecture, data model &amp; testing
+          </summary>
+          <div class="arch__body">
+            <div>
+              <div class="arch__figure"><svg viewBox="0 0 690 210" role="img" aria-label="React SPA through JWT filter, controller, service and repository layers to MongoDB, with Twilio alongside the service layer" xmlns="http://www.w3.org/2000/svg">
+  <text x="12" y="18" font-family="JetBrains Mono, monospace" font-size="9.5"
+        letter-spacing="1.4" fill="var(--text-dim)">REQUEST FLOW</text>
+  
+    <rect x="12" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="71" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">React SPA</text>
+    <text x="71" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">React (Vite)</text>
+  
+    <line x1="130" y1="71" x2="145" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M145 67 L152 71 L145 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="152" y="44" width="118" height="54" rx="9"
+          fill="var(--surface-2)"
+          stroke="var(--accent)" stroke-width="1.2"/>
+    <text x="211" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--accent)">JWT Filter</text>
+    <text x="211" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">Spring Security</text>
+  
+    <line x1="270" y1="71" x2="285" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M285 67 L292 71 L285 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="292" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="351" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Controller</text>
+    <text x="351" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">4 controllers</text>
+  
+    <line x1="410" y1="71" x2="425" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M425 67 L432 71 L425 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="432" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="491" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Service</text>
+    <text x="491" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">business logic</text>
+  
+    <line x1="550" y1="71" x2="565" y2="71" stroke="var(--text-dim)" stroke-width="1.3"/>
+    <path d="M565 67 L572 71 L565 75 Z" fill="var(--text-dim)"/>
+  
+    <rect x="572" y="44" width="118" height="54" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="631" y="67" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Repository</text>
+    <text x="631" y="83" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">MongoRepository</text>
+
+  
+    <line x1="631" y1="98" x2="631" y2="141" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="3 3"/>
+    <path d="M627 141 L631 148 L635 141 Z" fill="var(--text-dim)"/>
+  
+    <rect x="562" y="148" width="138" height="46" rx="9"
+          fill="var(--surface-2)"
+          stroke="var(--accent)" stroke-width="1.2"/>
+    <text x="631" y="171" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--accent)">MongoDB Atlas</text>
+    <text x="631" y="187" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">3 collections</text>
+
+  
+    <line x1="491" y1="98" x2="491" y2="141" stroke="var(--text-dim)" stroke-width="1.3" stroke-dasharray="3 3"/>
+    <path d="M487 141 L491 148 L495 141 Z" fill="var(--text-dim)"/>
+  
+    <rect x="410" y="148" width="138" height="46" rx="9"
+          fill="var(--surface)"
+          stroke="var(--line-strong)" stroke-width="1.2"/>
+    <text x="479" y="171" text-anchor="middle"
+          font-family="Sora, sans-serif" font-size="11.5" font-weight="700"
+          fill="var(--text)">Twilio SMS</text>
+    <text x="479" y="187" text-anchor="middle"
+          font-family="JetBrains Mono, monospace" font-size="9"
+          fill="var(--text-dim)">twilio 12.1.1</text>
+</svg></div>
+              <p class="arch__cap">Document-oriented persistence — Spring Data MongoDB rather than JPA.</p>
+            </div>
+            <div>
+              <h4>Data model</h4>
+              <ul class="erd">
+                <li><code>users</code><span class="card">document</span><code>@Document("users")</code><em>seeker or employer role</em></li>
+                <li><code>jobs</code><span class="card">document</span><code>@Document("jobs")</code><em>holds employer reference</em></li>
+                <li><code>job_applications</code><span class="card">document</span><code>seeker × job</code><em>guarded by DuplicateApplicationException</em></li>
+                <li><code>User</code><span class="card">enum</span><code>Role</code><em>JOB_SEEKER / EMPLOYER</em></li>
+                <li><code>Job</code><span class="card">ref</span><code>postedBy</code><em>employer id stored on the document</em></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Implementation notes</h4>
+              <ul class="arch__notes">
+                <li><strong>Persistence:</strong> document-oriented storage on MongoDB Atlas via <code>MongoRepository</code> — deliberately different from the JPA projects, so the data model is denormalised rather than joined.</li>
+                <li><strong>Notifications:</strong> <code>SmsServiceImpl</code> wraps the Twilio SDK to send real-time SMS when an application status changes; the phone number is collected at sign-up.</li>
+                <li><strong>Authorisation:</strong> a <code>CurrentUserProvider</code> resolves the authenticated principal, and <code>ForbiddenOperationException</code> stops an employer from touching another employer’s postings.</li>
+                <li><strong>Domain errors:</strong> typed exceptions — <code>DuplicateApplicationException</code>, <code>EmailAlreadyExistsException</code>, <code>ResourceNotFoundException</code> — are translated to HTTP status codes by a global handler.</li>
+                <li><strong>Honest gap:</strong> this project has the thinnest test coverage of the three; expanding it is the next thing on my list.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
       </article>
 
     </div>
@@ -560,45 +1017,11 @@
   </div>
 </section>
 
-<!-- ============ BLOG ============ -->
-<section class="sec" id="blog">
-  <div class="wrap">
-    <header class="sec__head reveal">
-      <p class="sec__eyebrow">05 — Writing</p>
-      <h2 class="sec__title">Notes from the build</h2>
-      <p class="sec__sub">Articles on the problems I hit while shipping these projects.</p>
-    </header>
-
-    <div class="blog">
-      <article class="post reveal">
-        <span class="post__tag">Spring Security</span>
-        <h3>Securing a Spring Boot API with JWT and role-based access</h3>
-        <p>A practical walkthrough of the filter chain, token generation, refresh strategy and the mistakes that cost me a weekend.</p>
-        <span class="post__meta" data-needs-link>Draft — coming soon</span>
-      </article>
-
-      <article class="post reveal" data-delay="80">
-        <span class="post__tag">Integrations</span>
-        <h3>Integrating Razorpay payments into a Spring Boot + React store</h3>
-        <p>Order creation, signature verification, webhook handling, and how to keep the payment flow idempotent.</p>
-        <span class="post__meta" data-needs-link>Draft — coming soon</span>
-      </article>
-
-      <article class="post reveal" data-delay="160">
-        <span class="post__tag">DevOps</span>
-        <h3>Dockerising a Spring Boot app and deploying it free on Render</h3>
-        <p>Multi-stage builds, slimming the image, environment configuration and connecting a managed PostgreSQL instance.</p>
-        <span class="post__meta" data-needs-link>Draft — coming soon</span>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- ============ CONTACT ============ -->
-<section class="sec sec--alt" id="contact">
+<section class="sec" id="contact">
   <div class="wrap">
     <header class="sec__head reveal">
-      <p class="sec__eyebrow">06 — Contact</p>
+      <p class="sec__eyebrow">05 — Contact</p>
       <h2 class="sec__title">Let's build something together</h2>
       <p class="sec__sub">I'm actively looking for Java / Full-Stack developer roles. Fastest reply is email or LinkedIn.</p>
     </header>

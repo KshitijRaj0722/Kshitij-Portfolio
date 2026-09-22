@@ -118,6 +118,9 @@
   /* --------------------------------------------------------- Count-up stats */
   const counters = $$('[data-count]');
 
+  // The real number is already in the HTML. Animating is decoration, so it may
+  // only ever replace the text with a value on its way to that same number —
+  // never blank it, never leave it at 0.
   function countUp(el) {
     const target = Number(el.dataset.count) || 0;
     const suffix = el.dataset.suffix || '';
@@ -143,14 +146,14 @@
     }, { threshold: 0.6 });
     counters.forEach(el => cio.observe(el));
 
-    // Failsafe — never leave a stat reading "0".
+    // Failsafe — if an animation was interrupted mid-flight, snap to the real
+    // number. (With no JS at all the HTML already shows it.)
     setTimeout(() => {
       counters.forEach(el => {
-        if (el.textContent.trim() === '0') {
-          el.textContent = el.dataset.count + (el.dataset.suffix || '');
-        }
+        const want = el.dataset.count + (el.dataset.suffix || '');
+        if (el.textContent.trim() !== want) el.textContent = want;
       });
-    }, 2500);
+    }, 3000);
   } else {
     counters.forEach(el => { el.textContent = el.dataset.count + (el.dataset.suffix || ''); });
   }

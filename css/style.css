@@ -451,6 +451,9 @@ h1, h2, h3, h4 {
    SKILLS
    ========================================================================== */
 .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+/* Core Java carries the most items — give it the full row so the pills don't
+   wrap into a much taller card than its neighbours. */
+.skill-card--wide { grid-column: 1 / -1; }
 
 .skill-card {
   padding: 26px; border-radius: var(--r);
@@ -577,6 +580,99 @@ h1, h2, h3, h4 {
 
 .project__links { display: flex; flex-wrap: wrap; gap: 11px; }
 
+/* Version / stack strip — answers "which Java, which Spring Boot, which DB" */
+.project__spec {
+  display: flex; flex-wrap: wrap; gap: 7px 18px;
+  margin: 14px 0 4px; padding: 12px 15px;
+  border-radius: var(--r-sm);
+  background: var(--surface-2); border: 1px solid var(--line);
+}
+.project__spec div { display: flex; align-items: baseline; gap: 7px; font-size: .77rem; }
+.project__spec dt { color: var(--text-dim); flex-shrink: 0; }
+.project__spec dd { font-family: var(--font-mono); color: var(--text); font-weight: 600; }
+
+/* Metric chips — API count, tests, entities */
+.project__metrics { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 4px; }
+.metric {
+  flex: 1 1 90px; padding: 11px 14px; border-radius: var(--r-sm);
+  background: var(--surface-2); border: 1px solid var(--line); text-align: center;
+}
+.metric b {
+  display: block; font-family: var(--font-display); font-size: 1.35rem; font-weight: 800;
+  color: var(--accent); line-height: 1; font-variant-numeric: tabular-nums;
+}
+.metric span {
+  display: block; margin-top: 4px; font-size: .68rem; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--text-dim);
+}
+
+/* ---------- Architecture disclosure ---------- */
+.arch {
+  grid-column: 1 / -1;
+  margin-top: 4px; border-radius: var(--r);
+  background: var(--surface-2); border: 1px solid var(--line);
+  overflow: hidden;
+}
+.arch > summary {
+  display: flex; align-items: center; gap: 10px;
+  padding: 15px 20px; cursor: pointer; list-style: none;
+  font-family: var(--font-display); font-size: .89rem; font-weight: 600;
+  transition: background-color .2s, color .2s;
+}
+.arch > summary::-webkit-details-marker { display: none; }
+.arch > summary:hover { color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.arch > summary::after {
+  content: ''; margin-left: auto; flex-shrink: 0;
+  width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform .25s var(--ease);
+}
+.arch[open] > summary::after { transform: rotate(-135deg) translate(-2px, -2px); }
+.arch > summary svg { color: var(--accent); flex-shrink: 0; }
+
+.arch__body { padding: 4px 20px 22px; display: grid; gap: 22px; }
+/* Grid items default to min-width:auto, which would let the wide SVG push the
+   track past the viewport instead of scrolling inside its own container. */
+.arch__body > * { min-width: 0; }
+.arch__figure { overflow-x: auto; min-width: 0; overscroll-behavior-x: contain; }
+.arch__figure svg { min-width: 520px; height: auto; }
+.arch__cap {
+  margin-top: 8px; font-size: .76rem; color: var(--text-dim); font-style: italic;
+}
+
+.arch h4 {
+  font-size: .8rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--text-dim); margin-bottom: 12px; font-family: var(--font-mono); font-weight: 600;
+}
+
+/* Entity relationship rows */
+.erd { display: grid; gap: 8px; }
+.erd li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px;
+  padding: 9px 13px; border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--line);
+  font-size: .82rem;
+}
+.erd code {
+  font-family: var(--font-mono); font-size: .78rem; font-weight: 600; color: var(--text);
+}
+.erd .card {
+  font-family: var(--font-mono); font-size: .72rem; font-weight: 700;
+  color: var(--accent); padding: 1px 7px; border-radius: 5px;
+  background: rgba(240,128,60,.12); white-space: nowrap;
+}
+.erd em { color: var(--text-dim); font-style: normal; font-size: .78rem; }
+
+.arch__notes { display: grid; gap: 9px; }
+.arch__notes li {
+  position: relative; padding-left: 18px; font-size: .86rem; color: var(--text-mid); line-height: 1.6;
+}
+.arch__notes li::before {
+  content: ''; position: absolute; left: 0; top: 8px;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--accent-2);
+}
+.arch__notes strong { color: var(--text); font-weight: 600; }
+
 /* ==========================================================================
    CERTIFICATIONS
    ========================================================================== */
@@ -601,31 +697,6 @@ h1, h2, h3, h4 {
 .cert__meta dt { color: var(--text-dim); flex-shrink: 0; }
 .cert__meta dd { color: var(--text-mid); font-weight: 500; }
 .cert__meta code { font-family: var(--font-mono); font-size: .74rem; }
-
-/* ==========================================================================
-   BLOG
-   ========================================================================== */
-.blog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-
-.post {
-  display: flex; flex-direction: column;
-  padding: 26px; border-radius: var(--r);
-  background: var(--surface); border: 1px solid var(--line);
-  transition: transform .3s var(--ease), border-color .3s, box-shadow .3s var(--ease);
-}
-.post:hover { transform: translateY(-5px); border-color: var(--line-strong); box-shadow: var(--shadow); }
-.post__tag {
-  align-self: flex-start;
-  font-family: var(--font-mono); font-size: .7rem; font-weight: 600;
-  letter-spacing: .06em; text-transform: uppercase; color: var(--accent);
-  padding: 4px 10px; border-radius: 6px; background: rgba(240,128,60,.1);
-  margin-bottom: 15px;
-}
-.post h3 { font-size: 1.04rem; line-height: 1.4; margin-bottom: 11px; }
-.post p { font-size: .89rem; color: var(--text-mid); flex: 1; }
-.post__meta {
-  margin-top: 18px; font-family: var(--font-mono); font-size: .74rem; color: var(--text-dim);
-}
 
 /* ==========================================================================
    CONTACT
@@ -747,7 +818,7 @@ body.show-todo [data-needs-link]::after {
   .float-card--2 { right: -2%; }
 
   .about { grid-template-columns: 1fr; gap: 40px; }
-  .skills, .certs, .blog { grid-template-columns: repeat(2, 1fr); }
+  .skills, .certs { grid-template-columns: repeat(2, 1fr); }
   .contact { grid-template-columns: 1fr; }
   .project, .project--flip { grid-template-columns: 1fr; gap: 26px; }
   .project--flip .project__media { order: 0; }
@@ -778,7 +849,7 @@ body.show-todo [data-needs-link]::after {
   .sec__head { margin-bottom: 40px; }
   .wrap { padding-inline: 18px; }
 
-  .skills, .certs, .blog, .stat-grid { grid-template-columns: 1fr; }
+  .skills, .certs, .stat-grid { grid-template-columns: 1fr; }
   .float-card { display: none; }
   .project { padding: 18px; }
   .contact__form { padding: 24px 20px; }
