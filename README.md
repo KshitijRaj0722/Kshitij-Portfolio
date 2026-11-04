@@ -123,10 +123,15 @@ git push -u origin main
 ```
 
 Then: **repo → Settings → Pages → Source: `main` / root**.
-Live at `https://kshitijraj0722.github.io/Kshitij-Portfolio/` in about a minute.
+Live at `https://kshitij-portfolio-nu.vercel.app/` in about a minute.
 
 > Naming the repo `<username>.github.io` gives you the clean root URL.
 > Any other repo name works too — it just serves from `/<repo-name>/`.
 
-### Or Vercel / Netlify
-Import the repo, leave the build command empty, set the output directory to `/`.
+### Vercel (primary)
+Live at <https://kshitij-portfolio-nu.vercel.app/>. Imported from this repo with no
+build step — preset "Other", root `./`, output defaults to the repo root. Pushes to
+`main` redeploy automatically.
+
+GitHub Pages is kept live as a mirror so older résumé PDFs and the LinkedIn GUVI
+credential link, which both point at the github.io URL, keep working.
